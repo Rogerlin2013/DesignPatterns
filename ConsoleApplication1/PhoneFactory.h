@@ -1,9 +1,13 @@
 #pragma once
 
-#include <string>
 #include "phone.h"
 
-class PhoneFactory {
+class PhoneFactory
+{
 public:
-	static Phone* createPhoneByTag(std::string& tag);
+	PhoneFactory();
+	virtual ~PhoneFactory();
+
+	virtual Phone* createPhone() = 0;
 };
+

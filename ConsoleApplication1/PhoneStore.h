@@ -6,5 +6,6 @@ public:
 	~PhoneStore();
 
 	static void sellPhone();
+	static void sellPhoneFactoryMethod();
 };
 

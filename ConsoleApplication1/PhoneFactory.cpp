@@ -1,14 +1,10 @@
 #include "PhoneFactory.h"
 
-Phone* PhoneFactory::createPhoneByTag(std::string& tag) {
-	Phone* newPhone = nullptr;
+PhoneFactory::PhoneFactory()
+{
+}
 
-	if (std::string("MI") == tag) {
-		newPhone = new MIPhone();
-	}
-	else if (std::string("HW") == tag) {
-		newPhone = new HWPhone();
-	}
 
-	return newPhone;
+PhoneFactory::~PhoneFactory()
+{
 }
