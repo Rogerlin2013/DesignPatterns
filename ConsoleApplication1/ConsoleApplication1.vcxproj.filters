@@ -13,10 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="FactoryMethod">
+      <UniqueIdentifier>{966e9ae2-2fce-48d4-99dd-d29497c0629e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="phone.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneFactory.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneStore.cpp">
+      <Filter>FactoryMethod</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="phone.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneFactory.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneStore.h">
+      <Filter>FactoryMethod</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

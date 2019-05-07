@@ -152,6 +152,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="phone.cpp" />
+    <ClCompile Include="PhoneFactory.cpp" />
+    <ClCompile Include="PhoneStore.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="phone.h" />
+    <ClInclude Include="PhoneFactory.h" />
+    <ClInclude Include="PhoneStore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
