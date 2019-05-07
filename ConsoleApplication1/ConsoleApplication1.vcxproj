@@ -151,17 +151,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseFactory.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="HWFactory.cpp" />
+    <ClCompile Include="HWPad.cpp" />
     <ClCompile Include="HWPhoneFactory.cpp" />
+    <ClCompile Include="MIFactory.cpp" />
+    <ClCompile Include="MIPad.cpp" />
     <ClCompile Include="MIPhoneFactory.cpp" />
+    <ClCompile Include="Pad.cpp" />
     <ClCompile Include="phone.cpp" />
     <ClCompile Include="PhoneFactory.cpp" />
     <ClCompile Include="SimplePhoneFactory.cpp" />
     <ClCompile Include="PhoneStore.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseFactory.h" />
+    <ClInclude Include="HWFactory.h" />
+    <ClInclude Include="HWPad.h" />
     <ClInclude Include="HWPhoneFactory.h" />
+    <ClInclude Include="MIFactory.h" />
+    <ClInclude Include="MIPad.h" />
     <ClInclude Include="MIPhoneFactory.h" />
+    <ClInclude Include="Pad.h" />
     <ClInclude Include="phone.h" />
     <ClInclude Include="PhoneFactory.h" />
     <ClInclude Include="SimplePhoneFactory.h" />

@@ -7,5 +7,7 @@ public:
 
 	static void sellPhone();
 	static void sellPhoneFactoryMethod();
+	static void sellPhoneAbstractFactory();
+	static void playGameOnPad();
 };
 

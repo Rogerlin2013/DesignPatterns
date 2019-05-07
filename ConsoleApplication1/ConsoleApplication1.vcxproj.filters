@@ -19,6 +19,9 @@
     <Filter Include="SimpleFactory">
       <UniqueIdentifier>{443dbdc4-a3ac-4f29-a52d-7cec4698f588}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AbstractFactory">
+      <UniqueIdentifier>{2e771037-01d1-4d43-bcf0-4ec704b9d478}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp">
@@ -42,6 +45,24 @@
     <ClCompile Include="SimplePhoneFactory.cpp">
       <Filter>SimpleFactory</Filter>
     </ClCompile>
+    <ClCompile Include="BaseFactory.cpp">
+      <Filter>AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Pad.cpp">
+      <Filter>AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="HWPad.cpp">
+      <Filter>AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="MIPad.cpp">
+      <Filter>AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="HWFactory.cpp">
+      <Filter>AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="MIFactory.cpp">
+      <Filter>AbstractFactory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phone.h">
@@ -61,6 +82,24 @@
     </ClInclude>
     <ClInclude Include="SimplePhoneFactory.h">
       <Filter>SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseFactory.h">
+      <Filter>AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pad.h">
+      <Filter>AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="HWPad.h">
+      <Filter>AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="MIPad.h">
+      <Filter>AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="HWFactory.h">
+      <Filter>AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="MIFactory.h">
+      <Filter>AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

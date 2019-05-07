@@ -3,6 +3,9 @@
 #include "MIPhoneFactory.h"
 #include "HWPhoneFactory.h"
 
+#include "MIFactory.h"
+#include "HWFactory.h"
+
 PhoneStore::PhoneStore()
 {
 }
@@ -29,4 +32,26 @@ void PhoneStore::sellPhoneFactoryMethod() {
 	PhoneFactory* hwPhoneFactory = new HWPhoneFactory();
 	Phone* phone2 = hwPhoneFactory->createPhone();
 	phone2->makeCall();
+}
+
+void PhoneStore::sellPhoneAbstractFactory() {
+	BaseFactory* miFactory = new MIFactory();
+	BaseFactory* hwFactory = new HWFactory();
+
+	Phone* phone1 = miFactory->createPhone();
+	phone1->makeCall();
+
+	Phone* phone2 = hwFactory->createPhone();
+	phone2->makeCall();
+}
+
+void PhoneStore::playGameOnPad() {
+	BaseFactory* miFactory = new MIFactory();
+	BaseFactory* hwFactory = new HWFactory();
+
+	Pad* pad1 = miFactory->createPad();
+	pad1->playPadGame();
+
+	Pad* pad2 = hwFactory->createPad();
+	pad2->playPadGame();
 }
