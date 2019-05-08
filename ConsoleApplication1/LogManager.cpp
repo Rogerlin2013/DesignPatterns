@@ -10,6 +10,10 @@ LogManager::~LogManager()
 {
 }
 
+LogManager& LogManager::operator=(const LogManager& logger) {
+	return *LogManager::logInstance;
+}
+
 CRITICAL_SECTION LogManager::cs;
 LogManager* LogManager::logInstance = nullptr;
 
@@ -29,5 +33,5 @@ LogManager* LogManager::sharedInstance() {
 }
 
 void LogManager::log(std::string &string) {
-	std::cout << "Log " << string << "done!" << std::endl;
+	std::cout << "Log " << string << "done!" << " this: " << this << std::endl;
 }

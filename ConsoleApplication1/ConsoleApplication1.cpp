@@ -4,14 +4,28 @@
 #include "PhoneStore.h"
 #include "LogManager.h"
 
+void useSingletonLogger();
+
 int main()
 {
 	/*PhoneStore::sellPhoneAbstractFactory();
 	PhoneStore::playGameOnPad();*/
+	useSingletonLogger();
+}
+
+void useSingletonLogger() {
 	LogManager::init();
 
 	std::string info("fjjjj");
 	LogManager::sharedInstance()->log(info);
+
+	/*LogManager newLogger(*LogManager::sharedInstance());
+
+	newLogger.log(info);
+
+	LogManager logger2;
+	logger2 = newLogger;
+	logger2.log(info);*/
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
