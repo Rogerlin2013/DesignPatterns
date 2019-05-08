@@ -2,11 +2,16 @@
 //
 
 #include "PhoneStore.h"
+#include "LogManager.h"
 
 int main()
 {
-	PhoneStore::sellPhoneAbstractFactory();
-	PhoneStore::playGameOnPad();
+	/*PhoneStore::sellPhoneAbstractFactory();
+	PhoneStore::playGameOnPad();*/
+	LogManager::init();
+
+	std::string info("fjjjj");
+	LogManager::sharedInstance()->log(info);
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

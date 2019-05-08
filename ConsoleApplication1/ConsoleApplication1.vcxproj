@@ -156,6 +156,7 @@
     <ClCompile Include="HWFactory.cpp" />
     <ClCompile Include="HWPad.cpp" />
     <ClCompile Include="HWPhoneFactory.cpp" />
+    <ClCompile Include="LogManager.cpp" />
     <ClCompile Include="MIFactory.cpp" />
     <ClCompile Include="MIPad.cpp" />
     <ClCompile Include="MIPhoneFactory.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="HWFactory.h" />
     <ClInclude Include="HWPad.h" />
     <ClInclude Include="HWPhoneFactory.h" />
+    <ClInclude Include="LogManager.h" />
     <ClInclude Include="MIFactory.h" />
     <ClInclude Include="MIPad.h" />
     <ClInclude Include="MIPhoneFactory.h" />
