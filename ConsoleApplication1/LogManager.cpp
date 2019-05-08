@@ -10,10 +10,6 @@ LogManager::~LogManager()
 {
 }
 
-LogManager& LogManager::operator=(const LogManager& logger) {
-	return *LogManager::logInstance;
-}
-
 CRITICAL_SECTION LogManager::cs;
 LogManager* LogManager::logInstance = nullptr;
 
