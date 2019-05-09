@@ -22,6 +22,9 @@ void PhoneStore::sellPhone() {
 	Phone* phone2 = SimplePhoneFactory::createPhoneByTag(MITag);
 	phone1->makeCall();
 	phone2->makeCall();
+
+	delete phone1;
+	delete phone2;
 }
 
 void PhoneStore::sellPhoneFactoryMethod() {
@@ -29,9 +32,15 @@ void PhoneStore::sellPhoneFactoryMethod() {
 	Phone* phone1 = miPhoneFactory->createPhone();
 	phone1->makeCall();
 
+	delete phone1;
+	delete miPhoneFactory;
+
 	PhoneFactory* hwPhoneFactory = new HWPhoneFactory();
 	Phone* phone2 = hwPhoneFactory->createPhone();
 	phone2->makeCall();
+
+	delete phone2;
+	delete hwPhoneFactory;
 }
 
 void PhoneStore::sellPhoneAbstractFactory() {
@@ -43,6 +52,11 @@ void PhoneStore::sellPhoneAbstractFactory() {
 
 	Phone* phone2 = hwFactory->createPhone();
 	phone2->makeCall();
+
+	delete phone1;
+	delete phone2;
+	delete miFactory;
+	delete hwFactory;
 }
 
 void PhoneStore::playGameOnPad() {
@@ -54,4 +68,9 @@ void PhoneStore::playGameOnPad() {
 
 	Pad* pad2 = hwFactory->createPad();
 	pad2->playPadGame();
+
+	delete pad1;
+	delete pad2;
+	delete miFactory;
+	delete hwFactory;
 }
