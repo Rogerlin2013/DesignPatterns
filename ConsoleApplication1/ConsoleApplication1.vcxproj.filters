@@ -25,6 +25,9 @@
     <Filter Include="Singleton">
       <UniqueIdentifier>{20a0cbaa-1387-439c-9f08-21129ae130b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Builder">
+      <UniqueIdentifier>{9bf81e75-0a70-49dd-b233-49c5d5e34991}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp">
@@ -69,6 +72,18 @@
     <ClCompile Include="LogManager.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
+    <ClCompile Include="PhoneProduct.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="HWPhoneBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Director.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phone.h">
@@ -109,6 +124,18 @@
     </ClInclude>
     <ClInclude Include="LogManager.h">
       <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneProduct.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="HWPhoneBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Director.h">
+      <Filter>Builder</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

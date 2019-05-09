@@ -3,14 +3,19 @@
 
 #include "PhoneStore.h"
 #include "LogManager.h"
+#include "Director.h"
+#include "HWPhoneBuilder.h"
+#include <iostream>
 
 void useSingletonLogger();
+void createPhoneWithBuilder();
 
 int main()
 {
 	/*PhoneStore::sellPhoneAbstractFactory();
 	PhoneStore::playGameOnPad();*/
 	useSingletonLogger();
+	createPhoneWithBuilder();
 }
 
 void useSingletonLogger() {
@@ -26,6 +31,12 @@ void useSingletonLogger() {
 	LogManager logger2;
 	logger2 = newLogger;
 	logger2.log(info);*/
+}
+
+void createPhoneWithBuilder() {
+	Director* director = new Director();
+	director->constructPhoneWithBuilder(new HWPhoneBuilder());
+	PhoneProduct* phone = director->obtainPhoneProduct();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
