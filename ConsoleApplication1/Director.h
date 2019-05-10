@@ -8,6 +8,7 @@ public:
 	~Director();
 
 	void constructPhoneWithBuilder(PhoneBuilder* builder);
+
 	PhoneProduct* obtainPhoneProduct();
 private:
 	PhoneBuilder* phoneBuilder;

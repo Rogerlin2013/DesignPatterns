@@ -12,6 +12,7 @@ public:
 	inline void setCapacity(std::string& capacity) { this->capacity = capacity; };
 	inline void setDisplay(std::string& display) { this->display = display; };
 
+	friend std::ostream& operator<<(std::ostream& os, const PhoneProduct& phone);
 private:
 	std::string CPU;
 	std::string capacity;

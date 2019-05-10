@@ -5,6 +5,8 @@
 #include "LogManager.h"
 #include "Director.h"
 #include "HWPhoneBuilder.h"
+#include "MIPhoneBuilder.h"
+#include "PhoneProduct.h"
 #include <iostream>
 
 void useSingletonLogger();
@@ -14,7 +16,7 @@ int main()
 {
 	/*PhoneStore::sellPhoneAbstractFactory();
 	PhoneStore::playGameOnPad();*/
-	useSingletonLogger();
+	//useSingletonLogger();
 	createPhoneWithBuilder();
 }
 
@@ -35,8 +37,23 @@ void useSingletonLogger() {
 
 void createPhoneWithBuilder() {
 	Director* director = new Director();
-	director->constructPhoneWithBuilder(new HWPhoneBuilder());
+	PhoneBuilder* phoneBuilder = new HWPhoneBuilder();
+	director->constructPhoneWithBuilder(phoneBuilder);
 	PhoneProduct* phone = director->obtainPhoneProduct();
+
+	std::cout << *phone << std::endl;
+
+	PhoneBuilder* miPhoneBuilder = new MIPhoneBuilder();
+	director->constructPhoneWithBuilder(miPhoneBuilder);
+	PhoneProduct* miPhone = director->obtainPhoneProduct();
+
+	std::cout << *miPhone << std::endl;
+
+	delete phone;
+	delete miPhone;
+	delete miPhoneBuilder;
+	delete phoneBuilder;
+	delete director;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

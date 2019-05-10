@@ -84,6 +84,9 @@
     <ClCompile Include="Director.cpp">
       <Filter>Builder</Filter>
     </ClCompile>
+    <ClCompile Include="MIPhoneBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phone.h">
@@ -135,6 +138,9 @@
       <Filter>Builder</Filter>
     </ClInclude>
     <ClInclude Include="Director.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="MIPhoneBuilder.h">
       <Filter>Builder</Filter>
     </ClInclude>
   </ItemGroup>
