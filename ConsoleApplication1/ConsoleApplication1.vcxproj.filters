@@ -28,6 +28,9 @@
     <Filter Include="Builder">
       <UniqueIdentifier>{9bf81e75-0a70-49dd-b233-49c5d5e34991}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Prototype">
+      <UniqueIdentifier>{311d3864-d371-4a8f-a699-64914c5ad337}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp">
@@ -87,6 +90,12 @@
     <ClCompile Include="MIPhoneBuilder.cpp">
       <Filter>Builder</Filter>
     </ClCompile>
+    <ClCompile Include="IPrototype.cpp">
+      <Filter>Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="PrototypeProduct1.cpp">
+      <Filter>Prototype</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phone.h">
@@ -142,6 +151,12 @@
     </ClInclude>
     <ClInclude Include="MIPhoneBuilder.h">
       <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="IPrototype.h">
+      <Filter>Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="PrototypeProduct1.h">
+      <Filter>Prototype</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

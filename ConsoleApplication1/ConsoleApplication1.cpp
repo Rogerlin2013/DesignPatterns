@@ -7,17 +7,20 @@
 #include "HWPhoneBuilder.h"
 #include "MIPhoneBuilder.h"
 #include "PhoneProduct.h"
+#include "PrototypeProduct1.h"
 #include <iostream>
 
 void useSingletonLogger();
 void createPhoneWithBuilder();
+void createProductWithPrototype();
 
 int main()
 {
 	/*PhoneStore::sellPhoneAbstractFactory();
 	PhoneStore::playGameOnPad();*/
 	//useSingletonLogger();
-	createPhoneWithBuilder();
+	//createPhoneWithBuilder();
+	createProductWithPrototype();
 }
 
 void useSingletonLogger() {
@@ -54,6 +57,16 @@ void createPhoneWithBuilder() {
 	delete miPhoneBuilder;
 	delete phoneBuilder;
 	delete director;
+}
+
+void createProductWithPrototype() {
+	IPrototype* prototype = new PrototypeProduct1();
+	IPrototype* newProduct = prototype->clone();
+
+	PrototypeProduct1* product = dynamic_cast<PrototypeProduct1*>(newProduct);
+	if (product != nullptr) {
+		std::cout << (*product) << std::endl;
+	}
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

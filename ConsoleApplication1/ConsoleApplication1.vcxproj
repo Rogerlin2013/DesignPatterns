@@ -158,6 +158,7 @@
     <ClCompile Include="HWPad.cpp" />
     <ClCompile Include="HWPhoneBuilder.cpp" />
     <ClCompile Include="HWPhoneFactory.cpp" />
+    <ClCompile Include="IPrototype.cpp" />
     <ClCompile Include="LogManager.cpp" />
     <ClCompile Include="MIFactory.cpp" />
     <ClCompile Include="MIPad.cpp" />
@@ -168,6 +169,7 @@
     <ClCompile Include="PhoneBuilder.cpp" />
     <ClCompile Include="PhoneFactory.cpp" />
     <ClCompile Include="PhoneProduct.cpp" />
+    <ClCompile Include="PrototypeProduct1.cpp" />
     <ClCompile Include="SimplePhoneFactory.cpp" />
     <ClCompile Include="PhoneStore.cpp" />
   </ItemGroup>
@@ -178,6 +180,7 @@
     <ClInclude Include="HWPad.h" />
     <ClInclude Include="HWPhoneBuilder.h" />
     <ClInclude Include="HWPhoneFactory.h" />
+    <ClInclude Include="IPrototype.h" />
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="MIFactory.h" />
     <ClInclude Include="MIPad.h" />
@@ -188,6 +191,7 @@
     <ClInclude Include="PhoneBuilder.h" />
     <ClInclude Include="PhoneFactory.h" />
     <ClInclude Include="PhoneProduct.h" />
+    <ClInclude Include="PrototypeProduct1.h" />
     <ClInclude Include="SimplePhoneFactory.h" />
     <ClInclude Include="PhoneStore.h" />
   </ItemGroup>
