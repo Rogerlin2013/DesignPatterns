@@ -8,11 +8,13 @@
 #include "MIPhoneBuilder.h"
 #include "PhoneProduct.h"
 #include "PrototypeProduct1.h"
+#include "HomeDeviceManager.h"
 #include <iostream>
 
 void useSingletonLogger();
 void createPhoneWithBuilder();
 void createProductWithPrototype();
+void useHomeDeviceWithFacade();
 
 int main()
 {
@@ -20,7 +22,8 @@ int main()
 	PhoneStore::playGameOnPad();*/
 	//useSingletonLogger();
 	//createPhoneWithBuilder();
-	createProductWithPrototype();
+	//createProductWithPrototype();
+	useHomeDeviceWithFacade();
 }
 
 void useSingletonLogger() {
@@ -67,6 +70,16 @@ void createProductWithPrototype() {
 	if (product != nullptr) {
 		std::cout << (*product) << std::endl;
 	}
+}
+
+void useHomeDeviceWithFacade() {
+	HomeDeviceManager* deviceManager = new HomeDeviceManager();
+	deviceManager->coolWind();
+	deviceManager->playMovie();
+	deviceManager->offMovie();
+	deviceManager->allDeviceOff();
+
+	delete deviceManager;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

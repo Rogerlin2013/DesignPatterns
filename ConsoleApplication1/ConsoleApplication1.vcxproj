@@ -151,13 +151,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AirCondition.cpp" />
     <ClCompile Include="BaseFactory.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="Director.cpp" />
+    <ClCompile Include="DVDPlayer.cpp" />
+    <ClCompile Include="HomeDeviceManager.cpp" />
     <ClCompile Include="HWFactory.cpp" />
     <ClCompile Include="HWPad.cpp" />
     <ClCompile Include="HWPhoneBuilder.cpp" />
     <ClCompile Include="HWPhoneFactory.cpp" />
+    <ClCompile Include="IElectricDevice.cpp" />
     <ClCompile Include="IPrototype.cpp" />
     <ClCompile Include="LogManager.cpp" />
     <ClCompile Include="MIFactory.cpp" />
@@ -169,17 +173,23 @@
     <ClCompile Include="PhoneBuilder.cpp" />
     <ClCompile Include="PhoneFactory.cpp" />
     <ClCompile Include="PhoneProduct.cpp" />
+    <ClCompile Include="Projector.cpp" />
     <ClCompile Include="PrototypeProduct1.cpp" />
     <ClCompile Include="SimplePhoneFactory.cpp" />
     <ClCompile Include="PhoneStore.cpp" />
+    <ClCompile Include="VoiceBox.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AirCondition.h" />
     <ClInclude Include="BaseFactory.h" />
     <ClInclude Include="Director.h" />
+    <ClInclude Include="DVDPlayer.h" />
+    <ClInclude Include="HomeDeviceManager.h" />
     <ClInclude Include="HWFactory.h" />
     <ClInclude Include="HWPad.h" />
     <ClInclude Include="HWPhoneBuilder.h" />
     <ClInclude Include="HWPhoneFactory.h" />
+    <ClInclude Include="IElectricDevice.h" />
     <ClInclude Include="IPrototype.h" />
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="MIFactory.h" />
@@ -191,9 +201,11 @@
     <ClInclude Include="PhoneBuilder.h" />
     <ClInclude Include="PhoneFactory.h" />
     <ClInclude Include="PhoneProduct.h" />
+    <ClInclude Include="Projector.h" />
     <ClInclude Include="PrototypeProduct1.h" />
     <ClInclude Include="SimplePhoneFactory.h" />
     <ClInclude Include="PhoneStore.h" />
+    <ClInclude Include="VoiceBox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

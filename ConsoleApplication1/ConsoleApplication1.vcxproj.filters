@@ -31,6 +31,9 @@
     <Filter Include="Prototype">
       <UniqueIdentifier>{311d3864-d371-4a8f-a699-64914c5ad337}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Facade">
+      <UniqueIdentifier>{5680d3c9-cb85-4493-8821-72bc1855647a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp">
@@ -96,6 +99,24 @@
     <ClCompile Include="PrototypeProduct1.cpp">
       <Filter>Prototype</Filter>
     </ClCompile>
+    <ClCompile Include="AirCondition.cpp">
+      <Filter>Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="DVDPlayer.cpp">
+      <Filter>Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="HomeDeviceManager.cpp">
+      <Filter>Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="IElectricDevice.cpp">
+      <Filter>Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Projector.cpp">
+      <Filter>Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="VoiceBox.cpp">
+      <Filter>Facade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phone.h">
@@ -157,6 +178,24 @@
     </ClInclude>
     <ClInclude Include="PrototypeProduct1.h">
       <Filter>Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="AirCondition.h">
+      <Filter>Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="DVDPlayer.h">
+      <Filter>Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="HomeDeviceManager.h">
+      <Filter>Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="IElectricDevice.h">
+      <Filter>Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Projector.h">
+      <Filter>Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="VoiceBox.h">
+      <Filter>Facade</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
